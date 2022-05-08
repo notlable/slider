@@ -39,3 +39,30 @@ const changeDot = () => {
 }
 
 let intervalIndex = setInterval(changeSlide, 2000);
+
+const keyChangeSlide = e => {
+    if (e.code == 'ArrowLeft' || e.code == 'ArrowRight') {
+        clearTimeout(intervalIndex);
+        if (e.code == 'ArrowLeft') {
+            active--;
+        } else if (e.code == 'ArrowRight') {
+            active++;
+        }
+
+        if (active == articles.length) {
+            active = 0;
+        }
+
+        if (active < 0) {
+            active = 2;
+        }
+        img.src = articles[active].image;
+        h1.textContent = articles[active].title;
+        changeDot();
+        intervalIndex = setInterval(changeSlide, 2000);
+    }
+}
+
+
+
+window.addEventListener('keydown', keyChangeSlide)
