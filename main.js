@@ -1,15 +1,15 @@
 const articles = [
     {
         title: 'Pierwszy text',
-        image: 'https://cdn.pixabay.com/photo/2020/02/25/09/57/road-4878453__480.jpg'
+        image: 'https://cdn.pixabay.com/photo/2021/11/30/08/24/strawberries-6834750__480.jpg'
     },
     {
         title: 'Drugi text',
-        image: 'https://cdn.pixabay.com/photo/2021/05/12/10/09/common-blue-6247877__340.jpg'
+        image: 'https://cdn.pixabay.com/photo/2022/05/26/19/14/child-7223632__340.jpg'
     },
     {
         title: 'Trzeci text',
-        image: 'https://cdn.pixabay.com/photo/2022/01/29/06/07/couple-6976409__340.jpg'
+        image: 'https://cdn.pixabay.com/photo/2022/06/07/03/25/rice-fields-7247360__340.jpg'
     },
 ]
 
